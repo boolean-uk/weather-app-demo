@@ -36,6 +36,8 @@ main {
 /* weather */
 .weather-icon {
   max-width: 100%;
+  transition: transform 0.3s, opacity 1s;
+  transition-delay: 0.2s;
 }
 
 .weather-info {
@@ -57,6 +59,9 @@ main {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
+
+  transition: transform 0.3s, opacity 0.3s;
+  transition-delay: 0.2s;
 }
 
 .panel-title {
@@ -68,4 +73,15 @@ main {
 .description {
   font-size: 18px;
   font-weight: bold;
+}
+
+/* loading animations */
+.js-loading .weather-icon {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.js-loading .panel {
+  opacity: 0;
+  transform: scale(0);
 }
