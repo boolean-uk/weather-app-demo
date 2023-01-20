@@ -1,4 +1,10 @@
-/* CSS Reset */
+/* Custom properties */
+:root {
+  --font: 'Roboto', sans-serif;
+  --gradient: linear-gradient(to bottom, #ebeffd, #85a5fa);
+}  
+
+  /* CSS Reset */
 * {
   margin: 0;
   padding: 0;
@@ -9,4 +15,57 @@
 html {
   height: 100vh;
   line-height: 1;
+  font-family: var(--font);
+  background-image: var(--gradient);
+}
+
+.container {
+  width: 90vw;
+  padding: 16px;
+  margin: 0 auto;
+}
+
+header img {
+  width: 56px;
+}
+
+main {
+  text-align: center;
+}
+
+/* weather */
+.weather-icon {
+  max-width: 100%;
+}
+
+.weather-info {
+  margin-bottom: 16px;
+}
+
+.weather-location {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.weather-temperature {
+  font-size: 112px;
+}
+
+
+/* panel */
+.panel {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.panel-title {
+  color: #4c6c96;
+  margin-bottom: 12px;
+}
+
+
+.description {
+  font-size: 18px;
+  font-weight: bold;
 }

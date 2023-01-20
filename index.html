@@ -12,6 +12,9 @@
     <link rel="icon" href="images/icon.png" type="image/png" />
 
     <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet" />
 
     <!-- Style -->
     <link rel="stylesheet" href="style.css" type="text/css" />
@@ -24,6 +27,28 @@
   <body>
 
     <!-- container element -->
+    <div class="container">
+
+      <!-- header with logo -->
+      <header>
+        <img src="images/logo.png" alt="Coding Week Logo">
+      </header>
+
+      <!-- main section with weather and info panel -->
+      <main>
+        <div class="weather-info">
+          <img class="weather-icon" src="images/13n.png" alt="Weather Icon">
+          <div class="weather-location">Retrieving data...</div>
+          <div class="weather-temperature">-1°</div>
+        </div>
+
+        <div class="panel">
+          <h4 class="panel-title">Info</h4>
+          <div class="description">Brrr! It's cold!</div>
+        </div>
+
+      </main>
+    </div>
     
   </body>
 </html>
