@@ -33,6 +33,9 @@ function onSuccess (data) {
             weatherLocation.innerText = locationName;
             weatherTemperature.innerText = `${temperature}°`;
             descriptionElement.innerText = getDescription(iconCode);
+
+            // remove animations
+            htmlElement.classList.remove('js-loading');
         })
 }
 
