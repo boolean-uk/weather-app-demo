@@ -2,7 +2,7 @@
   "short_name": "Meteo",
   "name": "Meteo",
   "icons": [{
-    "src": "icon.png",
+    "src": "images/icon.png",
     "type": "image/png",
     "sizes": "192x192"
   }],
